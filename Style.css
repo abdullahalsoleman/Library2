@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f9;
+  color: #010a08;
+  direction: rtl;
+}
+
+nav {
+  background-color: #0cc015;
+  text-align: center;
+  padding: 1em 0;
+  box-shadow: 0 2px 4px rgba(6, 196, 6, 0.1);
+}
+
+nav .nav-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 1em;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav .nav-link:hover {
+  color: #f39c12;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: #e74c3c;
+  margin-bottom: 1em;
+  text-align: right;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle; 
+
+}
+
+.table th {
+  background-color: rgb(17, 138, 13);
+  color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: #aac7a1;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #34495e;
+  color: white;
+  margin-top: 30px;
+}
+
+button {
+  background-color: #0cc015;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #8e44ad;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+form label {
+  font-weight: bold;
+  text-align: right;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form button {
+  align-self: flex-end;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .table,
+  form {
+    font-size: 14px;
+  }
+  button {
+    width: 100%;
+  }
+}

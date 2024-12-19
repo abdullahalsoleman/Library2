@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المكتبة – الكتب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="home.html" class="nav-link">الرئيسية</a>
+    <a href="AboutUs.html" class="nav-link">من نحن</a>
+    <a href="Books.html" class="nav-link">الكتب</a>
+  </nav>
+  <main class="main-content">
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table" id="books-table">
+          <thead>
+            <tr>
+              <th>رمزالكتاب</th>
+              <th>ISBN</th>
+              <th>العنوان</th>
+              <th>السعر</th>
+              <th>إظهار التفاصيل</th>
+              <th>اختيار</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>978-9980916738</td>
+              <td>مغامرات العقل</td>
+              <td>55000 ل.س</td>
+              <td><input type="checkbox" onclick="showDetails(this, 'details-001')"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr id="details-001" class="details-row" style="display: none;">
+              <td colspan="6">
+                <div class="book-details">
+                  <img src="image/1.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+                  <div>
+                    <p><strong>الناشر:</strong> دار المعارف</p>
+                    <p><strong>تصنيف الكتاب:</strong> فلسفة</p>
+                    <p><strong>ملخص:</strong> هذا الكتاب يتناول مفاهيم الفلسفة والعقل البشري في سياق مغامراته الفكرية. يسعى الكاتب إلى تقديم نظرة شاملة حول كيف يؤثر العقل في مختلف جوانب الحياة، وكيف يمكن للإنسان أن يستفيد من قدراته العقلية لفهم العالم المحيط به بشكل أعمق.</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>978-9990916745</td>
+              <td>أنت لست ذكياً إلى هذا الحد</td>
+              <td>35000 ل.س</td>
+              <td><input type="checkbox" onclick="showDetails(this, 'details-002')"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr id="details-002" class="details-row" style="display: none;">
+              <td colspan="6">
+                <div class="book-details">
+                  <img src="image/2.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+                  <div>
+                    <p><strong>الناشر:</strong> مكتبة الأدب</p>
+                    <p><strong>تصنيف الكتاب:</strong> فلسفة والعقل</p>
+                    <p><strong>ملخص:</strong> كتاب ممتع يتناول العديد من قضايا العقل والمنطق</p>
+                  </div>
+                </div>
+            </td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>978-9870916752</td>
+              <td>دورة الكتابة الإبداعية</td>
+              <td>20000 ل.س</td>
+              <td><input type="checkbox" onclick="showDetails(this, 'details-003')"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr id="details-003" class="details-row" style="display: none;">
+              <td colspan="6">
+                <div class="book-details">
+                  <img src="image/3.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+                  <div>
+                    <p><strong>الناشر:</strong> دار الكتابة</p>
+                    <p><strong>تصنيف الكتاب:</strong> أدب</p>
+                    <p><strong>ملخص:</strong> يقدم الكتاب تقنيات مبتكرة وملهمة في الكتابة الإبداعية. يساعد الكتاب على تطوير أسلوب الكتابة، تحسين التعبير اللغوي، وتنظيم الأفكار بطريقة منطقية، مما يجعله دليلاً مثاليًا للمبدعين الذين يسعون للتميز في الكتابة.</p>
+                  </div>
+                </div>
+            </td>
+            </tr>
+            <tr>
+              <td>004</td>
+              <td>978-9884916769</td>
+              <td>تاريخ الذكاء الاصطناعي</td>
+              <td>35500 ل.س</td>
+              <td><input type="checkbox" onclick="showDetails(this, 'details-004')"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr id="details-004" class="details-row" style="display: none;">
+              <td colspan="6">
+                <div class="book-details">
+                  <img src="image/4.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+                  <div>
+                    <p><strong>الناشر:</strong> تقنيات العصر</p>
+                    <p><strong>تصنيف الكتاب:</strong> تكنولوجيا</p>
+                    <p><strong>ملخص:</strong> يقدم هذا الكتاب فهماً عميقاً للذكاء الاصطناعي ويستعرض مختلف تطبيقاته في حياتنا اليومية. يوضح الكتاب كيف يمكن للذكاء الاصطناعي أن يساعد في حل المشاكل المعقدة وتطوير الصناعات المختلفة من خلال خوارزميات متقدمة وأدوات قوية.</p>
+                  </div>
+                </div>
+            </td>
+            </tr>
+            <tr>
+              <td>005</td>
+              <td>978-9435416776</td>
+              <td>موسوعة الأدب العربي</td>
+              <td>28000 ل.س</td>
+              <td><input type="checkbox" onclick="showDetails(this, 'details-005')"></td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr id="details-005" class="details-row" style="display: none;">
+              <td colspan="6">
+                <div class="book-details">
+                  <img src="image/5.jpg" alt="image" style="width: 150px; margin-right: 20px;">
+                  <div>
+                    <p><strong>الناشر:</strong> دار الأدب</p>
+                    <p><strong>تصنيف الكتاب:</strong> أدب عربي</p>
+                    <p><strong>ملخص:</strong> يتناول الكتاب الأدب العربي عبر العصور ويستعرض أهم أعمال الكتاب والشعراء الذين ساهموا في تطوير الأدب العربي. هو مرجع قيم للمهتمين بالأدب العربي من جميع الفترات الزمنية.</p>
+                  </div>
+                </div>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="text-align: right; margin-top: 20px;">
+          <button id="followButton" onclick="showForm()">متابعة</button>
+      </div>
+    </div>
+  </main>
+  <main class="main-content" id="form" style="display: none;">
+    <div class="container">
+      <div class="contact-card">
+          <h2>معلومات مقدم الطلب</h2>
+          <form id="userForm" novalidate>
+              <label for="fullName">الاسم الكامل:</label>
+              <input type="text" id="fullName" name="fullName"  pattern="^[\u0621-\u064A\s]+$" placeholder="أدخل الاسم الكامل">
+              <span class="error-message" id="fullNameError"></span>
+              
+              <label for="nationalId">الرقم الوطني:</label>
+              <input type="text" id="nationalId" name="nationalId" required pattern="^\d{11}$" placeholder="أدخل الرقم الوطني (11 خانة)">
+              <span class="error-message" id="nationalIdError"></span>
+              
+              <label for="birthDate">تاريخ الولادة:</label>
+              <input type="date" id="birthDate" name="birthDate">
+              <span class="error-message" id="birthDateError"></span>
+              
+              <label for="mobileNumber">رقم الموبايل:</label>
+              <input type="text" id="mobileNumber" name="mobileNumber" pattern="^09\d{8}$" placeholder="أدخل رقم الموبايل (يجب أن يبدأ بـ 09)">
+              <span class="error-message" id="mobileNumberError"></span>
+              
+              <label for="email">البريد الإلكتروني:</label>
+              <input type="email" id="email" name="email" placeholder="أدخل البريد الإلكتروني">
+              <span class="error-message" id="emailError"></span>
+              
+              <div id="selected-books">
+                  <h3>الكتب المختارة:</h3>
+                  <ul id="book-list"></ul>
+                  <p>المجموع الكلي: <span id="total-price">0</span> ل.س</p>
+              </div>
+              
+              <div style="text-align: right; margin-top: 20px;">
+                  <button type="submit">إرسال</button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </main>
+  <main class="main-content">
+    <p><a href="https://example.com" target="_blank" rel="noopener">موقع الاستضافة </a></p>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myFunctions.js" defer></script>
+</body>
+</html>
